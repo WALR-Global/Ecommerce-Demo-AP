@@ -196,7 +196,7 @@ export default function CreateOrUpdateManufacturerForm({
     const input = {
       language: router.locale,
       name,
-      slug,
+      slug: slugAutoSuggest,
       description,
       is_approved,
       website,
@@ -231,7 +231,7 @@ export default function CreateOrUpdateManufacturerForm({
       } else {
         updateManufacturer({
           ...input,
-          id: initialValues.id!,
+          id: initialValues.slug!,
           shop_id: shopId,
         });
       }

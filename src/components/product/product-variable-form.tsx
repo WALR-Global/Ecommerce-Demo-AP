@@ -83,8 +83,8 @@ export default function ProductVariableForm({
   const cartesianProduct = getCartesianProduct(getValues(name));
 
   console.log('fields: ', fields)
-  console.log('attributes: ', attributes)
-  console.log('variations: ', variations)
+  // console.log('attributes: ', attributes)
+  // console.log('variations: ', variations)
 
   return (
     <div className="my-5 flex flex-wrap sm:my-8">

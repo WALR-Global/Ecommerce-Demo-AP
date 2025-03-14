@@ -54,24 +54,24 @@ const TagList = ({
   });
 
   const columns = [
-    {
-      title: (
-        <TitleWithSort
-          title={t('table:table-item-id')}
-          ascending={
-            sortingObj.sort === SortOrder.Asc && sortingObj.column === 'id'
-          }
-          isActive={sortingObj.column === 'id'}
-        />
-      ),
-      className: 'cursor-pointer',
-      dataIndex: 'id',
-      key: 'id',
-      align: alignLeft,
-      width: 180,
-      onHeaderCell: () => onHeaderClick('id'),
-      render: (id: number) => `#${t('table:table-item-id')}: ${id}`,
-    },
+    // {
+    //   title: (
+    //     <TitleWithSort
+    //       title={t('table:table-item-id')}
+    //       ascending={
+    //         sortingObj.sort === SortOrder.Asc && sortingObj.column === 'id'
+    //       }
+    //       isActive={sortingObj.column === 'id'}
+    //     />
+    //   ),
+    //   className: 'cursor-pointer',
+    //   dataIndex: 'id',
+    //   key: 'id',
+    //   align: alignLeft,
+    //   width: 180,
+    //   onHeaderCell: () => onHeaderClick('id'),
+    //   render: (id: number) => `#${t('table:table-item-id')}: ${id}`,
+    // },
     {
       title: (
         <TitleWithSort

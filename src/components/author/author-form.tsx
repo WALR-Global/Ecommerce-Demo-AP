@@ -186,6 +186,7 @@ export default function CreateOrUpdateAuthorForm({ initialValues }: IProps) {
   const onSubmit = async (values: FormValues) => {
     const input = {
       ...values,
+      slug: slugAutoSuggest,
       language: router.locale,
       socials: values?.socials
         ? values?.socials?.map((social: any) => ({

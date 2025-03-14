@@ -248,6 +248,7 @@ export function getProductInputValues(
     in_flash_sale,
     ...simpleValues
   } = values;
+  console.log('valuesssssssssss: ', values)
   // const { locale } = useRouter();
   // const router = useRouter();
   const processedFile = processFileWithName(digital_file_input);

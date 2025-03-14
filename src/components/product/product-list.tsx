@@ -68,17 +68,15 @@ const ProductList = ({
     },
   });
 
-  console.log('Products on ProductList: ', products)
-
   let columns = [
-    {
-      title: t('table:table-item-id'),
-      dataIndex: 'id',
-      key: 'id',
-      align: alignLeft,
-      width: 130,
-      render: (id: number) => `#${t('table:table-item-id')}: ${id}`,
-    },
+    // {
+    //   title: t('table:table-item-id'),
+    //   dataIndex: 'id',
+    //   key: 'id',
+    //   align: alignLeft,
+    //   width: 130,
+    //   render: (id: number) => `#${t('table:table-item-id')}: ${id}`,
+    // },
     {
       title: (
         <TitleWithSort

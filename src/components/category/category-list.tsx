@@ -55,14 +55,14 @@ const CategoryList = ({
   });
 
   const columns = [
-    {
-      title: t('table:table-item-id'),
-      dataIndex: 'id',
-      key: 'id',
-      align: alignLeft,
-      width: 120,
-      render: (id: number) => `#${t('table:table-item-id')}: ${id}`,
-    },
+    // {
+    //   title: t('table:table-item-id'),
+    //   dataIndex: 'id',
+    //   key: 'id',
+    //   align: alignLeft,
+    //   width: 120,
+    //   render: (id: number) => `#${t('table:table-item-id')}: ${id}`,
+    // },
     {
       title: (
         <TitleWithSort
@@ -142,16 +142,16 @@ const CategoryList = ({
     },
     {
       title: t('table:table-item-group'),
-      dataIndex: 'type',
-      key: 'type',
+      dataIndex: 'type_name',
+      key: 'type_name',
       align: 'center',
       width: 120,
-      render: (type: any) => (
+      render: (type_name: string) => (
         <div
           className="overflow-hidden truncate whitespace-nowrap"
-          title={type?.name}
+          title={type_name}
         >
-          {type?.name}
+          {type_name}
         </div>
       ),
     },
